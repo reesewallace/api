@@ -5,26 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Functions</title>
-  <link rel="stylesheet" href="assets/style/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style/fontawesome/fontawesome-all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/style/style.css">
 </head>
 <body>
-  <div class="container ">
-<div id="append">
+  <div class="jumbotron text-center"><h1>Movie Search</h1></div>
+  <div class="container-fluid">
+    <div id="search">
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Search:</span>
+        <input type="text" class="form-control" placeholder="Find your movie" aria-describedby="basic-addon1" id="term">
+        <span class="input-group-btn">
+     <button class="btn btn-default btn-outline-dark" type="submit" id="submit">Go!</button>
+   </span>
+      </div>
+    </div>
+    <div class="text-center">
+<div id="title"> </div>
+  <div id="poster">
+</div>
+</div>
+<div id="buttons" class="text-center hidden">
+  <button class="btn modalbtn" id="btn0" data-toggle="modal" data-target="#directorModal">Personnel</button>
+  <button class="btn modalbtn" id="btn1" data-toggle="modal" data-target="#plotModal">Plot Summary</button>
+  <button class="btn modalbtn" id="btn2" data-toggle="modal" data-target="#ratingModal">Scores</button>
+  <button class="btn modalbtn" id="btn3" data-toggle="modal" data-target="#detailsModal">Details</button>
+</div>
+</div>
 
+<!-- modals below -->
+<div class="modal fade" id="directorModal" tabindex="-1" role="dialog" aria-labelledby="directorModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center text-center">
+        <h2 class="modal-title" id="directorModalTitle">Who made it?</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="directorModalBody">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
-<div id="buttons" class="text-center">
-  <button class="btn-info btn btn0">CLICK HERE</button>
-  <button class="btn-info btn btn1">CLICK HERE</button>
-  <button class="btn-info btn btn2">CLICK HERE</button>
-  <button class="btn-info btn btn3">CLICK HERE</button>
+
+<div class="modal fade" id="plotModal" tabindex="-1" role="dialog" aria-labelledby="plotModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h2 class="modal-title" id="plotModalTitle">So what happens?</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="plotModalBody">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="modal fade" id="ratingModal" tabindex="-1" role="dialog" aria-labelledby="ratingModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h2 class="modal-title" id="ratingModalTitle">Is it any good?</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="ratingModalBody">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h2 class="modal-title" id="detailsModalTitle">Basics</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="detailsModalBody">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!--scripts below -->
 <script
 src="https://code.jquery.com/jquery-3.3.1.min.js"
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="assets/script/logic.js"></script>
 </body>
 </html>

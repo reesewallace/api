@@ -1,4 +1,37 @@
-.container {margin-left: auto; margin-right: auto;}
-img {width: 100%;}
+html {font-family: 'Raleway', sans-serif!important;}
+h1 {font-family: 'Raleway', sans-serif; font-weight: 700;}
+h4 {font-family: 'Raleway', sans-serif; font-weight: 200;}
+.container-fluid {margin-left: auto; margin-right: auto; margin-top: 2%; margin-bottom: 5%;}
 
+#search {width: 70%; margin:auto; min-width: 250px;}
 #buttons {margin-top: 20px;}
+
+.btn {font-weight: 700; text-transform: uppercase;}
+
+.modal-header {background-color: #000; color: #fff;}
+.modalbtn {background-color: #000; color: #fff; padding: 20px;}
+.modalbtn:hover {color: #BD2031;}
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url('../images/bg.jpg');
+    background-position: 0% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;}
+.subject {font-weight: 700; font-family: 'Raleway', sans-serif;}
+.input-group-addon {background-color: #000; color: #fff; font-family: 'Raleway', sans-serif; font-weight: bold; text-transform: uppercase;}
+
+@media only screen and (max-width: 480px) {
+  .poster {max-height: 500px; margin: auto;}
+.modalbtn {background-color: #000; color: #fff; padding: 20px; width: 200px; margin-top: 10px;}
+}
+@media only screen and (min-width: 768px) {
+  .poster {max-height: 500px; margin: auto;}
+}
+@media only screen and (min-width: 1024px) {
+  .poster {max-height: 500px; margin: auto;}
+  .modalbtn {height: 100px; background-color: #000; color: #fff; width: 200px; margin-top: 1%;}
+
+}
