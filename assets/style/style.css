@@ -24,11 +24,11 @@ h4 {font-family: 'Raleway', sans-serif; font-weight: 200;}
 .input-group-addon {background-color: #000; color: #fff; font-family: 'Raleway', sans-serif; font-weight: bold; text-transform: uppercase;}
 
 @media only screen and (max-width: 480px) {
-  .poster {max-height: 200px; margin: auto;}
+  .poster {max-height: 250px; margin: auto;}
 .modalbtn {background-color: #000; color: #fff; padding: 20px; width: 200px; margin-top: 10px;}
 }
-@media only screen and (min-width: 768px) {
-  .poster {max-height: 300px; margin: auto;}
+@media only screen and (max-width: 768px) {
+  .poster {max-height: 400px; margin: auto; padding: 20px;}
 }
 @media only screen and (min-width: 1024px) {
   .poster {max-height: 500px; margin: auto;}
