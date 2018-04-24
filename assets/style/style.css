@@ -7,7 +7,7 @@ h4 {font-family: 'Raleway', sans-serif; font-weight: 200;}
 #buttons {margin-top: 20px;}
 
 .btn {font-weight: 700; text-transform: uppercase;}
-
+.fas {color: white;}
 .modal-header {background-color: #000; color: #fff;}
 .modalbtn {background-color: #000; color: #fff; padding: 20px;}
 .modalbtn:hover {color: #BD2031;}
@@ -25,10 +25,12 @@ h4 {font-family: 'Raleway', sans-serif; font-weight: 200;}
 
 @media only screen and (max-width: 480px) {
   .poster {max-height: 250px; margin: auto;}
-.modalbtn {background-color: #000; color: #fff; padding: 20px; width: 200px; margin-top: 10px;}
+.modalbtn {background-color: #000; color: #fff; padding: 20px; width: 100px; margin-top: 10px;}
 }
 @media only screen and (max-width: 768px) {
   .poster {max-height: 400px; margin: auto; padding: 20px;}
+  .modalbtn {background-color: #000; color: #fff; padding: 20px; width: 200px; margin-top: 10px;}
+
 }
 @media only screen and (min-width: 1024px) {
   .poster {max-height: 500px; margin: auto;}
